@@ -28,5 +28,7 @@ for i in file_list:
                 sh.move('./files/'+i , './classificationed/dermatofibroma/'+i)
             elif j == 7:
                 sh.move('./files/'+i , './classificationed/vascular_lesions/'+i)
+        else:
+            continue
     count += 1
     print ("이미지 분류중 %.2f%%" % (count / len(file_list) * 100.0)) #실시간으로 진행상황 알려주기
